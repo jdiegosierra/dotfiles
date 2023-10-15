@@ -96,5 +96,10 @@
     "!Select sequence",
     "!Split",
     "!Split sequence"
-  ]
+  ],
+  "vs-kubernetes": {
+    "vscode-kubernetes.helm-path-mac": "/Users/diego/.vs-kubernetes/tools/helm/darwin-arm64/helm",
+    "vscode-kubernetes.kubectl-path-mac": "/Users/diego/.vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.minikube-path-mac": "/Users/diego/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+  }
 }

@@ -1,0 +1,24 @@
+# IDEs
+.idea
+*.iml
+*.iws
+.idea-compl
+*.sc
+.vscode
+
+# Mac
+.DS_Store
+
+# Clojure
+.lein-repl-history
+.lein-failures
+completer.histw
+.nrepl-port
+.lsp
+.clj-kondo
+
+# Scala
+libsigar-universal64-macosx.dylib
+
+# Custom
+*.no-commit.*

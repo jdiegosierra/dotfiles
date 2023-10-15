@@ -3,10 +3,16 @@ alias sudo='sudo '
 
 alias ..="cd .."
 alias ...="cd ../.."
-alias ll="ls -l"
-alias la="ls -la"
+alias ll="eza -l --icons"
+alias la="eza -la --icons"
 alias ~="cd ~"
 alias dotfiles='cd $DOTFILES_PATH'
+
+# Jumps
+alias ~="cd ~"
+alias tmp="cd ~/Desktop/tmp"
+alias projects='cd ~/Projects'
+alias codurance="cd ~/Projects/codurance"
 
 # Git
 alias gaa="git add -A"

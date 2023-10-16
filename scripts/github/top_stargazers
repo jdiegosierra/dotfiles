@@ -12,7 +12,7 @@ source "$DOTLY_PATH/scripts/core/table.sh"
 ##?    top_stargazers <repo>
 ##?
 ##? Example:
-##?   top_stargazers rgomezcasas/dotfiles
+##?   top_stargazers diego/dotfiles
 docs::parse "$@"
 
 log::warning "This could take a while!"

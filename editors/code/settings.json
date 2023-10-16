@@ -4,7 +4,7 @@
   "editor.suggestSelection": "first",
   "editor.minimap.enabled": false,
   "editor.dragAndDrop": false,
-  "editor.fontFamily": "DankMono Nerd font Mono",
+  "editor.fontFamily": "JetBrainsMono  Nerd Font",
   "terminal.integrated.fontFamily": "DankMono Nerd font Mono",
   "terminal.integrated.fontSize": 20,
   "editor.lineHeight": 2.1,
@@ -101,5 +101,6 @@
     "vscode-kubernetes.helm-path-mac": "/Users/diego/.vs-kubernetes/tools/helm/darwin-arm64/helm",
     "vscode-kubernetes.kubectl-path-mac": "/Users/diego/.vs-kubernetes/tools/kubectl/kubectl",
     "vscode-kubernetes.minikube-path-mac": "/Users/diego/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
-  }
+  },
+  "window.zoomLevel": -1
 }

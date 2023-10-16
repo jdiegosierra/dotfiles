@@ -12,7 +12,7 @@ source "$DOTLY_PATH/scripts/core/_main.sh"
 ##?   when_i_starred_a_repo <repo>
 ##?
 ##? Example:
-##?   when_i_starred_a_repo rgomezcasas/dotfiles
+##?   when_i_starred_a_repo jdiegosierra/dotfiles
 docs::parse "$@"
 
 if [ -z "$GITHUB_TOKEN" ]; then
@@ -25,7 +25,7 @@ for i in $(seq 1 100); do
 	found=$(
 		curl -s -H "Authorization: token $GITHUB_TOKEN" \
 			-H "Accept: application/vnd.github.v3.star+json" \
-			-XGET https://api.github.com/users/rgomezcasas/starred\?page="$i" |
+			-XGET https://api.github.com/users/jdiegosierra/starred\?page="$i" |
 			jq '.[] | .starred_at, .repo.full_name' |
 			grep -B1 "$repo" |
 			head -n1 |

@@ -20,7 +20,7 @@
   "files.eol": "\n",
   "search.useGlobalIgnoreFiles": true,
   "search.useIgnoreFiles": true,
-  "workbench.editor.showTabs": false,
+  "workbench.editor.showTabs": "single",
   "explorer.openEditors.visible": 1,
   // Behaviour
   "window.openFoldersInNewWindow": "on",
@@ -43,7 +43,6 @@
   "editor.hover.enabled": false,
   // Actions
   "editor.formatOnPaste": false,
-  "editor.formatOnSave": true,
   "[typescript]": {
     "editor.formatOnSave": false,
     "editor.codeActionsOnSave": [
@@ -102,5 +101,6 @@
     "vscode-kubernetes.kubectl-path-mac": "/Users/diego/.vs-kubernetes/tools/kubectl/kubectl",
     "vscode-kubernetes.minikube-path-mac": "/Users/diego/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
   },
-  "window.zoomLevel": -1
+  "window.zoomLevel": -1,
+  "workbench.layoutControl.enabled": false
 }

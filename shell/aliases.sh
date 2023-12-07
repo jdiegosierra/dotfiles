@@ -36,3 +36,4 @@ alias o.='open .'
 alias up='dot package update_all'
 
 alias python=python3
+alias k=kubectl

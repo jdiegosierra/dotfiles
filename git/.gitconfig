@@ -1,6 +1,11 @@
 [user]
+<<<<<<< HEAD
 	name = Juan Diego Sierra Fernández
 	email = juandiegosierrafernandez@gmail.com
+=======
+	name = Diego Sierra Fernández
+	email = dsierra@theworkshop.com
+>>>>>>> 37146a0 (Multiple changes)
 
 [fetch]
 	prune = true
@@ -42,6 +47,7 @@
 	smudge = git hawser smudge %f
 	required = true
 
+<<<<<<< HEAD
 [diff]
 	tool = vimdiff
 	compactionHeuristic = true
@@ -49,6 +55,22 @@
 
 [difftool]
 	prompt = false
+=======
+# [diff]
+# 	tool = vimdiff
+# 	compactionHeuristic = true
+# 	indentHeuristic = true
+
+# [difftool]
+# 	prompt = false
+
+[difftool "sourcetree"]
+        cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+        path =
+[mergetool "sourcetree"]
+        cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -a$
+        trustExitCode = true
+>>>>>>> 37146a0 (Multiple changes)
 
 [diff "json"]
 	textconv = python -m json.tool
@@ -91,9 +113,17 @@
 # [tag]
 # 	gpgsign = true
 # [gpg]
+<<<<<<< HEAD
 # 	program = /Users/diego/bin/gpg
 [pull]
 	rebase = true
+=======
+# 	program = /Users/dsierra/bin/gpg
+
+[pull]
+	rebase = true
+
+>>>>>>> 37146a0 (Multiple changes)
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -101,3 +131,9 @@
 	required = true
 [init]
 	defaultBranch = main
+<<<<<<< HEAD
+=======
+
+[commit]
+    template = /Users/dsierra/.stCommitMsg
+>>>>>>> 37146a0 (Multiple changes)

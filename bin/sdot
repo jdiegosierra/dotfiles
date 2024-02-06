@@ -2,7 +2,11 @@
 
 set -euo pipefail
 
+<<<<<<< HEAD
 source "/Users/diego/.dotfiles/shell/bash/.bashrc"
+=======
+source "/Users/dsierra/.dotfiles/shell/bash/.bashrc"
+>>>>>>> 37146a0 (Multiple changes)
 
 ##? dot, but without environment variables
 ##?

@@ -9,9 +9,15 @@ export CODELY_THEME_PWD_MODE="home_relative" # full, short, home_relative
 # ------------------------------------------------------------------------------
 # Languages
 # ------------------------------------------------------------------------------
+<<<<<<< HEAD
 export JAVA_HOME='/Library/Java/JavaVirtualMachines/amazon-corretto-15.jdk/Contents/Home'
 export GEM_HOME="$HOME/.gem"
 export GOPATH="$HOME/.go"
+=======
+# export JAVA_HOME='/Library/Java/JavaVirtualMachines/amazon-corretto-15.jdk/Contents/Home'
+# export GEM_HOME="$HOME/.gem"
+# export GOPATH="$HOME/.go"
+>>>>>>> 37146a0 (Multiple changes)
 
 # ------------------------------------------------------------------------------
 # Apps
@@ -31,9 +37,12 @@ path=(
 	"$HOME/bin"
 	"$DOTLY_PATH/bin"
 	"$DOTFILES_PATH/bin"
+<<<<<<< HEAD
 	"$JAVA_HOME/bin"
 	"$GEM_HOME/bin"
 	"$GOPATH/bin"
+=======
+>>>>>>> 37146a0 (Multiple changes)
 	"$HOME/.cargo/bin"
 	"/usr/local/opt/ruby/bin"
 	"/usr/local/opt/python/libexec/bin"
@@ -46,5 +55,14 @@ path=(
 	"/sbin"
 	"$path"
 )
+<<<<<<< HEAD
 
 export path
+=======
+	# "$JAVA_HOME/bin"
+	# "$GEM_HOME/bin"
+	# "$GOPATH/bin"
+export path
+
+export EDITOR="nano"
+>>>>>>> 37146a0 (Multiple changes)

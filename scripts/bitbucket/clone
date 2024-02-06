@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Clone all repos in Bitbucket
+##?
+##? Usage:
+##?    clone
+
+for repo in $(curl -s https://git.corp-apps.com/local/rest/api/latest/projects/$1/repos/ -H 'Cookie: _atl_bitbucket_remember_me=MDhiZGZlM2M2NzgxMzc0MGE3ZGI1ZmIxMTAyMDE0ZmQ3MmViOWMzMDplOGE4NGYyZDFkNmY3MTA1MTg4MzkwMGE5ZDdjNjAyMjIzMDM0NGRj; BITBUCKETSESSIONID=DCC626C9F5F3F33CABCEFE3944E1E16A; _ga=GA1.1.661889053.1702374897; _ga_0C4M1PWYZ7=GS1.1.1702374896.1.1.1702374978.0.0.0; _ga_T11SF3WXX2=GS1.1.1702374909.1.1.1702374978.54.0.0; _ga_K2SPJK2C73=GS1.1.1702374910.1.1.1702374978.54.0.0' -H 'Accept: application/json' | jq '.values[].links.clone[].href' | grep ssh | tr -d '"'); do git clone $repo; done

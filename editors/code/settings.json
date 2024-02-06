@@ -97,9 +97,15 @@
     "!Split sequence"
   ],
   "vs-kubernetes": {
+<<<<<<< HEAD
     "vscode-kubernetes.helm-path-mac": "/Users/diego/.vs-kubernetes/tools/helm/darwin-arm64/helm",
     "vscode-kubernetes.kubectl-path-mac": "/Users/diego/.vs-kubernetes/tools/kubectl/kubectl",
     "vscode-kubernetes.minikube-path-mac": "/Users/diego/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+=======
+    "vscode-kubernetes.helm-path-mac": "/Users/dsierra/.vs-kubernetes/tools/helm/darwin-arm64/helm",
+    "vscode-kubernetes.kubectl-path-mac": "/Users/dsierra/.vs-kubernetes/tools/kubectl/kubectl",
+    "vscode-kubernetes.minikube-path-mac": "/Users/dsierra/.vs-kubernetes/tools/minikube/darwin-arm64/minikube"
+>>>>>>> 37146a0 (Multiple changes)
   },
   "window.zoomLevel": -1,
   "workbench.layoutControl.enabled": false

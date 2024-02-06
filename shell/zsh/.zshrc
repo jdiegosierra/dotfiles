@@ -10,11 +10,8 @@ setopt +o nomatch
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
 
-<<<<<<< HEAD
-=======
 source "/opt/homebrew/opt/kube-ps1/share/kube-ps1.sh"
 
->>>>>>> 37146a0 (Multiple changes)
 # Start Zim
 source "$ZIM_HOME/init.zsh"
 
@@ -32,8 +29,6 @@ prompt ${DOTLY_THEME:-codely}
 source "$DOTLY_PATH/shell/zsh/bindings/dot.zsh"
 source "$DOTLY_PATH/shell/zsh/bindings/reverse_search.zsh"
 source "$DOTFILES_PATH/shell/zsh/key-bindings.zsh"
-
-<<<<<<< HEAD
 
 n ()
 {
@@ -82,13 +77,9 @@ export PATH="$PYENV_ROOT:$PATH"
 export PIPENV_PYTHON="$PYENV_ROOT/python"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+# export SDKMAN_DIR="$HOME/.sdkman"
+# [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-=======
 export SDKMAN_DIR=$(brew --prefix sdkman-cli)/libexec
 [[ -s "${SDKMAN_DIR}/bin/sdkman-init.sh" ]] && source "${SDKMAN_DIR}/bin/sdkman-init.sh"
 
@@ -103,5 +94,8 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
 [ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 export PATH=$PATH:/usr/local/go/bin
->>>>>>> 37146a0 (Multiple changes)

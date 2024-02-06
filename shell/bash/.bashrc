@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-export DOTFILES_PATH="/Users/diego/.dotfiles"
-=======
 export DOTFILES_PATH="/Users/dsierra/.dotfiles"
->>>>>>> 37146a0 (Multiple changes)
 export DOTLY_PATH="$DOTFILES_PATH/modules/dotly"
 export DOTLY_THEME="codely"
 
@@ -51,12 +47,9 @@ if [ -n "$(ls -A "$DOTFILES_PATH/shell/bash/completions/")" ]; then
   for bash_file in "$DOTFILES_PATH"/shell/bash/completions/_*; do
     source "$bash_file"
   done
-<<<<<<< HEAD
 fi
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-=======
 fi
->>>>>>> 37146a0 (Multiple changes)

@@ -17,8 +17,6 @@ function recent_dirs() {
 
 	cd "$(echo "$selected" | sed "s/\~/$escaped_home/")" || echo "Invalid directory"
 }
-<<<<<<< HEAD
-=======
 
 n ()
 {
@@ -50,4 +48,3 @@ n ()
         rm -f "$NNN_TMPFILE" > /dev/null
     }
 }
->>>>>>> 37146a0 (Multiple changes)

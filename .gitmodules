@@ -1,14 +1,4 @@
 [submodule "modules/dotly"]
 	path = modules/dotly
-<<<<<<< HEAD
-	url = https://github.com/CodelyTV/dotly.git
-	branch = main
-	
-# [submodule "modules/private"]
-# 	path = modules/private
-# 	url = git@github.com:jdiegosierra/dotfiles-private.git
-# 	branch = main
-=======
 	url = https://github.com/jdiegosierra/dotly
 	branch = main
->>>>>>> 37146a0 (Multiple changes)

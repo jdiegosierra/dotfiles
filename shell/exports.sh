@@ -5,13 +5,26 @@ export CODELY_THEME_MINIMAL=false
 export CODELY_THEME_MODE="dark"
 export CODELY_THEME_PROMPT_IN_NEW_LINE=false
 export CODELY_THEME_PWD_MODE="home_relative" # full, short, home_relative
+export EDITOR="nano"
+export KUBE_EDITOR="nano"
+export PYENV_ROOT="$HOME/.pyenv/shims"
+export PATH="$PYENV_ROOT:$PATH"
+export PIPENV_PYTHON="$PYENV_ROOT/python"
+export NVM_DIR="$HOME/.nvm"
+export DOTLY_PATH="$DOTFILES_PATH/modules/dotly"
+export DOTLY_THEME="codely"
+# Lo utilizo con kubectx para detectar todos los contextos de kubectl
+#export KUBECONFIG=~/.kube/kind-kind.json
+#export KUBECONFIG=$KUBECONFIG:`ls ~/.kube/* | grep -v cache | grep -v discovery | grep -v http | grep -v kubectx | grep -v kubens | paste -sd ":" -`
+export KUBECONFIG=~/.kube/all-in-one-kubeconfig.yaml
+
+[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
+[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
 # ------------------------------------------------------------------------------
 # Languages
 # ------------------------------------------------------------------------------
 export JAVA_HOME='/Library/Java/JavaVirtualMachines/amazon-corretto-15.jdk/Contents/Home'
-# export GEM_HOME="$HOME/.gem"
-# export GOPATH="$HOME/.go"
 
 # ------------------------------------------------------------------------------
 # Apps
@@ -46,9 +59,5 @@ path=(
 	"/sbin"
 	"$path"
 )
-	# "$JAVA_HOME/bin"
-	# "$GEM_HOME/bin"
-	# "$GOPATH/bin"
-export path
 
-export EDITOR="nano"
+export path

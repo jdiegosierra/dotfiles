@@ -18,7 +18,7 @@ function recent_dirs() {
 	cd "$(echo "$selected" | sed "s/\~/$escaped_home/")" || echo "Invalid directory"
 }
 
-n ()
+function n ()
 {
     # Block nesting of nnn in subshells
     [ "${NNNLVL:-0}" -eq 0 ] || {
@@ -47,4 +47,11 @@ n ()
         . "$NNN_TMPFILE"
         rm -f "$NNN_TMPFILE" > /dev/null
     }
+}
+
+function nnn_cd()                                                                                                   
+{
+    if ! [ -z "$NNN_PIPE" ]; then
+        printf "%s\0" "0c${PWD}" > "${NNN_PIPE}" !&
+    fi  
 }
